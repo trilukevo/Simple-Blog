@@ -7,7 +7,25 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+  <div id='sidebar'>
+    <div id='logo'>
+      <%= link_to root_path do %>
+      <%= image_tag 'c1.png'%>
+    <% end %>
+    </div>
+      
+        <ul>
+          <li class='category'>Website</li>
+          <li><%= link_to "Blog", root_path %></li>
+          <li>About</li>
+        </ul>
 
+        <ul>
+        <li class='category'>Social</li>
+        <li><a href='https://www.facebook.com/cristianocirsyn'>Facebook</a></li>
+        <li><a href='https://www.github.com/trilukevo'>GitHub</a></li>
+        </ul>
+  </div>
   <body>
     <%= yield %>
   </body>

@@ -3,3 +3,8 @@
   "private": true,
   "dependencies": {}
 }
+"files.associations": {
+        // extension name : html
+        "*.ejs": "html",
+        "*.js": "html"
+    }
